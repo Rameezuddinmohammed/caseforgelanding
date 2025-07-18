@@ -102,7 +102,7 @@ function updateToggleModeBtn(){
 }
 
 
-const promptWindow =  new Prompt("#pixa-playground")
+const promptWindow =  new Prompt("#caseforge-playground")
 const promptForm = document.querySelector("#prompt-form")
 const promptInput = promptForm.querySelector("input[name='prompt']")
 
@@ -207,10 +207,10 @@ function closeVideo(){
  */
 
 const typed = new Typed('#prompts-sample', {
-    strings: ["How to solve a rubik's cube? Step by step guide", 
-                "What's Pixa playground?", 
-                "How to build an AI SaaS App?", 
-                "How to integrate Pixa API?"],
+    strings: ["Launch a new product strategy for a tech startup", 
+                "Optimize supply chain for an e-commerce company", 
+                "Design a marketing campaign for a consumer brand", 
+                "Develop pricing strategy for a SaaS platform"],
     typeSpeed: 80,
     smartBackspace: true, 
     loop: true,

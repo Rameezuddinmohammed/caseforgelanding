@@ -119,11 +119,15 @@ class Prompt{
     answer(){
 
         let msg = {
-            "gpt 4o": "Hello from Gpt 4o, add 3 prompts",
-            "gemini": "Hello from Gemini, add 3 prompts",
-            "llama 3": "Hello from Meta Llama 3, add 3 prompts",
-            "claude": "Hello from Claude, add 3 prompts",
+            "marketing": "🎯 Marketing Case: You're launching a new fitness app. Your target audience is 18-35 year olds. What's your go-to-market strategy? Consider pricing, channels, and messaging.",
+            "strategy": "📊 Strategy Case: A traditional retail company wants to compete with Amazon. Analyze their options and recommend a digital transformation approach.",
+            "product": "🚀 Product Case: You're a PM at a food delivery startup. User retention is dropping after the first order. How do you identify and solve this problem?",
+            "operations": "⚙️ Operations Case: A manufacturing company has 20% defect rates. Walk through your approach to identify root causes and implement solutions.",
         }[this.chatModel]
+
+        if (!msg) {
+            msg = "🎯 Welcome to Caseforge! Choose a business domain above to start solving real-world cases and earning XP points!"
+        }
 
         const text = document.createElement("div")
         text.classList.add("tw-w-fit", "tw-mr-auto", "tw-p-2")

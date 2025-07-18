@@ -305,15 +305,12 @@ hr{
     width: 30%;
     height: 100%;
     border-radius: inherit; 
-    /* background: linear-gradient(#6366f1 23%, rgba(124,190,255,0) 87%); */
-    background-color: #6366f1;
+    background-color: #3b82f6;
     background-repeat: no-repeat;
-    /* background-size: 200% 200%; */
     background-position: 0% 0%;
     filter: blur(1.5rem);
     opacity: 0.8;
-    box-shadow: inset 0px 0px 20px 5px #6366f1;
-    /* transform: rotate(90deg); */
+    box-shadow: inset 0px 0px 20px 5px #3b82f6;
     z-index: -2;
     pointer-events: none;
     animation: slide 10s ease-in-out infinite;
